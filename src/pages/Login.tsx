@@ -42,7 +42,7 @@ export default function Login() {
         <div className="text-center">
           <div className="mx-auto w-24 h-24 mb-6 flex items-center justify-center rounded-2xl overflow-hidden shadow-sm border border-rose-100 bg-white">
             <img 
-              src="https://cdn.phototourl.com/uploads/2026-03-11-d23181de-15ee-45b4-b946-5d372634f5fb.png" 
+              src="https://cdn.phototourl.com/member/2026-03-29-6aafd335-cfb2-47ca-940d-0108ac027797.png" 
               alt="Logo PKK Cendrawasih 1" 
               className="w-full h-full object-cover" 
               referrerPolicy="no-referrer" 

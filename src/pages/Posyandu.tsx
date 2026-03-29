@@ -98,7 +98,7 @@ export default function Posyandu() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="mx-auto w-24 h-24 mb-6 flex items-center justify-center shadow-sm rounded-2xl overflow-hidden bg-white border border-rose-100">
               <img 
-                src="https://cdn.phototourl.com/uploads/2026-03-11-a735361d-90ab-4a16-a3db-7eeabf3d2e7e.png" 
+                src="https://cdn.phototourl.com/member/2026-03-29-132b62d8-d37a-4201-bfcd-120501987ee5.png" 
                 alt="Logo Posyandu" 
                 className="w-full h-full object-cover" 
                 referrerPolicy="no-referrer" 

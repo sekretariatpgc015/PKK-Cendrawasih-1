@@ -39,11 +39,19 @@ export default function Layout() {
     navigate('/login');
   };
 
-  const isPtmLansia = location.pathname === '/form-ptm-lansia';
-  const logoSrc = isPtmLansia 
-    ? "https://cdn.phototourl.com/uploads/2026-03-11-662d4adb-fdd7-4e41-b5d5-cf514ab18057.png"
-    : "https://cdn.phototourl.com/uploads/2026-03-11-d23181de-15ee-45b4-b946-5d372634f5fb.png";
-  const titleText = isPtmLansia ? "PTM Lansia" : "PKK Cendrawasih 1";
+  const isPosbinduRoute = location.pathname === '/posbindu' || location.pathname === '/form-ptm-lansia' || location.pathname === '/keuangan-posbindu';
+  const isPosyanduRoute = location.pathname === '/posyandu' || location.pathname === '/keuangan-posyandu';
+
+  let logoSrc = "https://cdn.phototourl.com/member/2026-03-29-6aafd335-cfb2-47ca-940d-0108ac027797.png";
+  let titleText = "PKK Cendrawasih 1";
+
+  if (isPosbinduRoute) {
+    logoSrc = "https://cdn.phototourl.com/member/2026-03-29-9809b89e-4e22-4209-9feb-be86deb8e748.png";
+    titleText = "Posbindu Cendrawasih 1";
+  } else if (isPosyanduRoute) {
+    logoSrc = "https://cdn.phototourl.com/member/2026-03-29-132b62d8-d37a-4201-bfcd-120501987ee5.png";
+    titleText = "Posyandu Cendrawasih 1";
+  }
 
   return (
     <div className="min-h-screen bg-rose-50 font-sans text-slate-800 flex flex-col">

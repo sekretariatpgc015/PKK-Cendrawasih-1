@@ -211,7 +211,7 @@ export default function Posbindu() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="mx-auto w-24 h-24 mb-6 flex items-center justify-center shadow-sm rounded-2xl overflow-hidden bg-white border border-rose-100 p-2">
           <img 
-            src="https://cdn.phototourl.com/uploads/2026-03-11-662d4adb-fdd7-4e41-b5d5-cf514ab18057.png" 
+            src="https://cdn.phototourl.com/member/2026-03-29-9809b89e-4e22-4209-9feb-be86deb8e748.png" 
             alt="Logo Posbindu" 
             className="w-full h-full object-contain" 
             referrerPolicy="no-referrer" 
@@ -517,7 +517,7 @@ export default function Posbindu() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="mx-auto w-24 h-24 mb-6 flex items-center justify-center shadow-sm rounded-2xl overflow-hidden bg-white border border-rose-100 p-2">
               <img 
-                src="https://cdn.phototourl.com/uploads/2026-03-11-662d4adb-fdd7-4e41-b5d5-cf514ab18057.png" 
+                src="https://cdn.phototourl.com/member/2026-03-29-9809b89e-4e22-4209-9feb-be86deb8e748.png" 
                 alt="Logo Posbindu" 
                 className="w-full h-full object-contain" 
                 referrerPolicy="no-referrer" 
