@@ -262,6 +262,62 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Majelis Talim */}
+      <section className="py-16 border-t border-rose-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">Majelis Taklim</h3>
+            <p className="text-lg text-slate-600">
+              Kegiatan Keagamaan Ibu-ibu PKK Cendrawasih 1 RW. 015
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
+            >
+              <img 
+                src="https://cdn.phototourl.com/member/2026-04-05-51df6785-138e-4bb8-9953-1325f50512ab.png" 
+                alt="Majelis Taklim 1" 
+                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
+            >
+              <img 
+                src="https://cdn.phototourl.com/member/2026-04-05-355feb5b-641d-4ada-b2f3-7115d9859084.png" 
+                alt="Majelis Taklim 2" 
+                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
+            >
+              <img 
+                src="https://cdn.phototourl.com/member/2026-04-05-5d38525c-639b-4bbd-9bb4-fb8647cbf2e4.png" 
+                alt="Majelis Taklim 3" 
+                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
     </motion.div>
   );
 }
