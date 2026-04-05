@@ -273,48 +273,76 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
-            >
-              <img 
-                src="https://cdn.phototourl.com/member/2026-04-05-51df6785-138e-4bb8-9953-1325f50512ab.png" 
-                alt="Majelis Taklim 1" 
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
-            >
-              <img 
-                src="https://cdn.phototourl.com/member/2026-04-05-355feb5b-641d-4ada-b2f3-7115d9859084.png" 
-                alt="Majelis Taklim 2" 
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group"
-            >
-              <img 
-                src="https://cdn.phototourl.com/member/2026-04-05-5d38525c-639b-4bbd-9bb4-fb8647cbf2e4.png" 
-                alt="Majelis Taklim 3" 
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
+          <div className="flex flex-col items-center space-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 w-full max-w-5xl">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center group"
+              >
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-rose-400 to-rose-200 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300 opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-bl from-rose-300 to-rose-100 rounded-2xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300 opacity-60"></div>
+                  
+                  <div className="relative w-40 rounded-2xl overflow-hidden shadow-xl z-10">
+                    <img 
+                      src="https://cdn.phototourl.com/member/2026-04-05-51df6785-138e-4bb8-9953-1325f50512ab.png" 
+                      alt="Majelis Taklim 1" 
+                      className="w-full h-auto group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-rose-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="flex flex-col items-center group"
+              >
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-rose-400 to-rose-200 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300 opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-bl from-rose-300 to-rose-100 rounded-2xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300 opacity-60"></div>
+                  
+                  <div className="relative w-40 rounded-2xl overflow-hidden shadow-xl z-10">
+                    <img 
+                      src="https://cdn.phototourl.com/member/2026-04-05-355feb5b-641d-4ada-b2f3-7115d9859084.png" 
+                      alt="Majelis Taklim 2" 
+                      className="w-full h-auto group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-rose-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex flex-col items-center group"
+              >
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-rose-400 to-rose-200 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300 opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-bl from-rose-300 to-rose-100 rounded-2xl transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300 opacity-60"></div>
+                  
+                  <div className="relative w-40 rounded-2xl overflow-hidden shadow-xl z-10">
+                    <img 
+                      src="https://cdn.phototourl.com/member/2026-04-05-5d38525c-639b-4bbd-9bb4-fb8647cbf2e4.png" 
+                      alt="Majelis Taklim 3" 
+                      className="w-full h-auto group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-rose-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
