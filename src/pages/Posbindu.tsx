@@ -225,7 +225,7 @@ export default function Posbindu() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         <div className="rounded-3xl overflow-hidden shadow-sm border border-slate-100 group">
           <img 
             src="https://cdn.phototourl.com/uploads/2026-03-11-ba7b285e-0dba-4a79-a5f3-1d309ee44d83.png" 
@@ -241,6 +241,36 @@ export default function Posbindu() {
             className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
+        </div>
+      </div>
+
+      {/* Photo Slide (Threads Style) */}
+      <div className="mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          <h3 className="text-2xl font-bold text-slate-900">Giat Posbindu 11 April 2026</h3>
+        </div>
+        <div className="-mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 sm:px-6 lg:px-8 pb-8 pt-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            {[
+              "https://cdn.phototourl.com/member/2026-04-12-a605578d-9811-474f-b56a-3d4016d89b27.jpg",
+              "https://cdn.phototourl.com/member/2026-04-12-77a52c3e-e249-49d4-b177-52d2a6a6bdc6.jpg",
+              "https://cdn.phototourl.com/member/2026-04-12-d8541218-bf28-44aa-b893-60cb31dd4bc4.jpg",
+              "https://cdn.phototourl.com/member/2026-04-12-f296d611-f7fd-475f-a1df-73bd115f8e45.jpg",
+              "https://cdn.phototourl.com/member/2026-04-12-84690e16-4346-444f-8f80-69119cda0b46.jpg"
+            ].map((src, index) => (
+              <div 
+                key={index} 
+                className="flex-none h-72 sm:h-80 aspect-[4/5] snap-center rounded-3xl overflow-hidden shadow-md border border-slate-100 group relative"
+              >
+                <img 
+                  src={src} 
+                  alt={`Giat Posbindu ${index + 1}`} 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
