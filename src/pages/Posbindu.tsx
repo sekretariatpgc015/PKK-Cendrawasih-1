@@ -259,7 +259,10 @@ export default function Posbindu() {
               "https://cdn.phototourl.com/member/2026-04-12-84690e16-4346-444f-8f80-69119cda0b46.jpg",
               "https://cdn.phototourl.com/member/2026-04-13-12423277-1888-4d34-86b2-eb7ac4e9cd93.jpg",
               "https://cdn.phototourl.com/member/2026-04-13-db4c0a0e-3c20-40a6-8f42-048dbdb8ffc4.jpg",
-              "https://cdn.phototourl.com/member/2026-04-13-69f48740-16bd-479d-ab42-94aa46928f9b.jpg"
+              "https://cdn.phototourl.com/member/2026-04-13-69f48740-16bd-479d-ab42-94aa46928f9b.jpg",
+              "https://i.ibb.co/BVd6SSjF/Whats-App-Image-2026-04-11-at-09-45-18-1.jpg",
+              "https://i.ibb.co/JwqSpcwh/Whats-App-Image-2026-04-11-at-09-45-18-2.jpg",
+              "https://i.ibb.co/zVg748Dg/Whats-App-Image-2026-04-11-at-09-45-18.jpg"
             ].map((src, index) => (
               <div 
                 key={index} 
