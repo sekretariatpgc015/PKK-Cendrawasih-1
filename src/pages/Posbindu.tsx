@@ -252,17 +252,13 @@ export default function Posbindu() {
         <div className="-mx-4 sm:-mx-6 lg:-mx-8">
           <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 sm:px-6 lg:px-8 pb-8 pt-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {[
-              "https://cdn.phototourl.com/member/2026-04-12-a605578d-9811-474f-b56a-3d4016d89b27.jpg",
-              "https://cdn.phototourl.com/member/2026-04-12-77a52c3e-e249-49d4-b177-52d2a6a6bdc6.jpg",
-              "https://cdn.phototourl.com/member/2026-04-12-d8541218-bf28-44aa-b893-60cb31dd4bc4.jpg",
-              "https://cdn.phototourl.com/member/2026-04-12-f296d611-f7fd-475f-a1df-73bd115f8e45.jpg",
-              "https://cdn.phototourl.com/member/2026-04-12-84690e16-4346-444f-8f80-69119cda0b46.jpg",
-              "https://cdn.phototourl.com/member/2026-04-13-12423277-1888-4d34-86b2-eb7ac4e9cd93.jpg",
-              "https://cdn.phototourl.com/member/2026-04-13-db4c0a0e-3c20-40a6-8f42-048dbdb8ffc4.jpg",
-              "https://cdn.phototourl.com/member/2026-04-13-69f48740-16bd-479d-ab42-94aa46928f9b.jpg",
-              "https://i.ibb.co/BVd6SSjF/Whats-App-Image-2026-04-11-at-09-45-18-1.jpg",
-              "https://i.ibb.co/JwqSpcwh/Whats-App-Image-2026-04-11-at-09-45-18-2.jpg",
-              "https://i.ibb.co/zVg748Dg/Whats-App-Image-2026-04-11-at-09-45-18.jpg"
+              "https://i.ibb.co.com/84XQWz6j/Whats-App-Image-2026-04-13-at-12-19-23.jpg",
+              "https://i.ibb.co.com/JwngRBG7/Whats-App-Image-2026-04-13-at-12-19-23-2.jpg",
+              "https://i.ibb.co.com/Cs2x3PjR/IMG-20260411-WA0026.jpg",
+              "https://i.ibb.co.com/LXgvZ6DT/Whats-App-Image-2026-04-13-at-12-19-23-1.jpg",
+              "https://i.ibb.co.com/zVg748Dg/Whats-App-Image-2026-04-11-at-09-45-18.jpg",
+              "https://i.ibb.co.com/BVd6SSjF/Whats-App-Image-2026-04-11-at-09-45-18-1.jpg",
+              "https://i.ibb.co.com/JwqSpcwh/Whats-App-Image-2026-04-11-at-09-45-18-2.jpg"
             ].map((src, index) => (
               <div 
                 key={index} 
