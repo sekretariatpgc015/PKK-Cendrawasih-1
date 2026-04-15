@@ -9,9 +9,10 @@ export default function Layout() {
 
   const isPosbinduLoggedIn = localStorage.getItem('isPosbinduLoggedIn') === 'true';
   const isPosbindu2LoggedIn = localStorage.getItem('isPosbindu2LoggedIn') === 'true';
+  const isPosbindu3LoggedIn = localStorage.getItem('isPosbindu3LoggedIn') === 'true';
   const isPkkLoggedIn = localStorage.getItem('isPkkLoggedIn') === 'true';
   const isPosyanduLoggedIn = localStorage.getItem('isPosyanduLoggedIn') === 'true';
-  const isLoggedIn = isPosbinduLoggedIn || isPosbindu2LoggedIn || isPkkLoggedIn || isPosyanduLoggedIn;
+  const isLoggedIn = isPosbinduLoggedIn || isPosbindu2LoggedIn || isPosbindu3LoggedIn || isPkkLoggedIn || isPosyanduLoggedIn;
 
   const navItems = [
     { path: '/', label: 'Beranda', icon: <Heart className="w-4 h-4 mr-2" /> },
@@ -27,6 +28,10 @@ export default function Layout() {
     navItems.push({ path: '/keuangan-posbindu', label: 'Keuangan', icon: <Wallet className="w-4 h-4 mr-2" /> });
   }
 
+  if (isPosbindu3LoggedIn) {
+    navItems.push({ path: '/keuangan-posbindu-non-subsidi', label: 'Keuangan Non Subsidi', icon: <Wallet className="w-4 h-4 mr-2" /> });
+  }
+
   if (isPkkLoggedIn) {
     navItems.push({ path: '/keuangan-pkk', label: 'Keuangan PKK', icon: <Wallet className="w-4 h-4 mr-2" /> });
   }
@@ -34,12 +39,13 @@ export default function Layout() {
   const handleLogout = () => {
     localStorage.removeItem('isPosbinduLoggedIn');
     localStorage.removeItem('isPosbindu2LoggedIn');
+    localStorage.removeItem('isPosbindu3LoggedIn');
     localStorage.removeItem('isPkkLoggedIn');
     localStorage.removeItem('isPosyanduLoggedIn');
     navigate('/login');
   };
 
-  const isPosbinduRoute = location.pathname === '/posbindu' || location.pathname === '/form-ptm-lansia' || location.pathname === '/keuangan-posbindu';
+  const isPosbinduRoute = location.pathname === '/posbindu' || location.pathname === '/form-ptm-lansia' || location.pathname === '/keuangan-posbindu' || location.pathname === '/keuangan-posbindu-non-subsidi';
   const isPosyanduRoute = location.pathname === '/posyandu' || location.pathname === '/keuangan-posyandu';
 
   let logoSrc = "https://cdn.phototourl.com/member/2026-03-29-6aafd335-cfb2-47ca-940d-0108ac027797.png";
