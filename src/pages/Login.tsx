@@ -20,6 +20,8 @@ export default function Login() {
     } else if (username === 'Posbindu 2' && password === 'Finance') {
       localStorage.setItem('isPosbindu2LoggedIn', 'true');
       navigate('/keuangan-posbindu');
+    } else if (username === 'Posbindu 3' && password === 'FinanceNS') {
+      window.location.href = 'https://keuangan-posbindu-non-subsidi.vercel.app/';
     } else if (username === 'PKK 015' && password === 'Finance') {
       localStorage.setItem('isPkkLoggedIn', 'true');
       navigate('/keuangan-pkk');
