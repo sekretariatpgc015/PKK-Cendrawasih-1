@@ -252,13 +252,13 @@ export default function Posbindu() {
         <div className="-mx-4 sm:-mx-6 lg:-mx-8">
           <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 sm:px-6 lg:px-8 pb-8 pt-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {[
+              "https://i.ibb.co.com/JwqSpcwh/Whats-App-Image-2026-04-11-at-09-45-18-2.jpg",
               "https://i.ibb.co.com/84XQWz6j/Whats-App-Image-2026-04-13-at-12-19-23.jpg",
               "https://i.ibb.co.com/JwngRBG7/Whats-App-Image-2026-04-13-at-12-19-23-2.jpg",
               "https://i.ibb.co.com/Cs2x3PjR/IMG-20260411-WA0026.jpg",
               "https://i.ibb.co.com/LXgvZ6DT/Whats-App-Image-2026-04-13-at-12-19-23-1.jpg",
               "https://i.ibb.co.com/zVg748Dg/Whats-App-Image-2026-04-11-at-09-45-18.jpg",
-              "https://i.ibb.co.com/BVd6SSjF/Whats-App-Image-2026-04-11-at-09-45-18-1.jpg",
-              "https://i.ibb.co.com/JwqSpcwh/Whats-App-Image-2026-04-11-at-09-45-18-2.jpg"
+              "https://i.ibb.co.com/BVd6SSjF/Whats-App-Image-2026-04-11-at-09-45-18-1.jpg"
             ].map((src, index) => (
               <div 
                 key={index} 
