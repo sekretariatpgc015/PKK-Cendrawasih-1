@@ -6,7 +6,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell,
   LineChart, Line,
-  AreaChart, Area, Legend
+  AreaChart, Area, Legend, ComposedChart
 } from 'recharts';
 
 interface Person {
@@ -171,7 +171,12 @@ export default function Posbindu() {
 
   const chartVisitData = Array.from(monthlyDataMap.values())
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey))
-    .map(d => ({ month: d.month, 'Laki-laki': d.LakiLaki, 'Perempuan': d.Perempuan }));
+    .map(d => ({ 
+      month: d.month, 
+      'Laki-laki': d.LakiLaki, 
+      'Perempuan': d.Perempuan,
+      'Total': d.LakiLaki + d.Perempuan 
+    }));
 
   const steps = [
     {
@@ -501,7 +506,7 @@ export default function Posbindu() {
         ) : (
           <div className="h-96 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={chartVisitData} margin={{ top: 20, right: 30, bottom: 20, left: 0 }}>
+              <ComposedChart data={chartVisitData} margin={{ top: 20, right: 30, bottom: 20, left: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                 <XAxis 
                   dataKey="month" 
@@ -519,25 +524,30 @@ export default function Posbindu() {
                   contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }} 
                 />
                 <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }} />
-                <Line 
-                  type="monotone" 
-                  name="Laki-laki"
+                <Bar 
                   dataKey="Laki-laki" 
-                  stroke="#3b82f6" 
-                  strokeWidth={3} 
-                  dot={{ r: 4, fill: '#3b82f6', strokeWidth: 2, stroke: '#fff' }} 
-                  activeDot={{ r: 6 }} 
+                  name="Laki-laki"
+                  fill="#3b82f6" 
+                  radius={[4, 4, 0, 0]} 
+                  barSize={30} 
+                />
+                <Bar 
+                  dataKey="Perempuan" 
+                  name="Perempuan"
+                  fill="#ec4899" 
+                  radius={[4, 4, 0, 0]} 
+                  barSize={30} 
                 />
                 <Line 
                   type="monotone" 
-                  name="Perempuan"
-                  dataKey="Perempuan" 
-                  stroke="#ec4899" 
+                  name="Total (Laki-laki + Perempuan)"
+                  dataKey="Total" 
+                  stroke="#10b981" 
                   strokeWidth={3} 
-                  dot={{ r: 4, fill: '#ec4899', strokeWidth: 2, stroke: '#fff' }} 
+                  dot={{ r: 4, fill: '#10b981', strokeWidth: 2, stroke: '#fff' }} 
                   activeDot={{ r: 6 }} 
                 />
-              </LineChart>
+              </ComposedChart>
             </ResponsiveContainer>
           </div>
         )}
